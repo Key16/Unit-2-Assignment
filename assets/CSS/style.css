@@ -192,7 +192,7 @@ nav a:hover{
 
 .project-small-card img{
     height: 25rem;
-    width:75%;
+    width:25rem;
     border-radius: 50%;
     background-position:left;
     
@@ -206,7 +206,7 @@ footer{
 
 }
 
-footer h3{
+footer h5{
     padding: 1rem;
     text-align: center;
     line-height: 1;
@@ -214,8 +214,13 @@ footer h3{
 
 footer ul{
     text-align: center;
-    display:co;
-    width:25%;
+    display:flex;
+    width:100%;
+    justify-content: space-evenly;
+}
+
+footer ul li {
+    align-content: center;
 }
 
 footer ul li img{
@@ -258,39 +263,39 @@ footer ul li img{
 
     .project-small-card{
         height:45rem;
-        width:30%;
         align-content: center;
         margin:2rem;
+        flex:1 1 30%;
     }
     
-   
-    footer ul{
-        text-align:right;
+
+    .project-small-card img{
+        width: 30rem;
+        height: 30rem;
     }
 
-    footer h5 {
-        float: left;
+    footer {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width:100%;
     }
+
    
+    footer ul {
+        justify-content: space-evenly;
+        width:20rem;
+    }
 
     footer ul li{
-        display:inline-block;
         width:5%;
-        align-content: right;
+        text-align: center;
     }
 
-    footer ul li img{
-        width:3rem;
-    }
     
-    .project-small-card img{
-        height:30rem;
-        width:70%;
-        border-radius: 50%;
-        
-    }
+
     
-  /* media query for larger screens */
+  /* media query for larger screens
   @media screen and (min-width: 992px) {
 
-  }
+  } */
