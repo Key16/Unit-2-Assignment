@@ -1,7 +1,8 @@
 :root{
-    --borders:2px solid rgba(45, 128, 206, 0.486);
-    --ivory:rgba(187, 228, 248, 0.466);
+    --borders:2px solid rgba(153, 211, 194, 0.486);
+    --ivory:rgba(213, 242, 255, 0.466);
     --text:rgb(24, 121, 167);
+    --box-colours: rgb(236, 249, 255);
 }
 /* 
 :root{
@@ -104,7 +105,7 @@ nav a:hover{
     box-shadow: 8px 8px 3px 1px rgba(164, 186, 206, 0.664);
 }
 
-/* First section with intro text and top project. it's been flex wrapped to change for desktop */
+/* section with intro text and top project */
 .intro-container{
     display:flex;
     flex-direction: row;
@@ -112,7 +113,7 @@ nav a:hover{
 }
 
 .box{
-    height:25rem;
+    height:40rem;
     flex: 0 1 100%;
     position: relative;
 }
@@ -133,9 +134,19 @@ nav a:hover{
 }
 
 .project-card {
-    background-image: url("https://wallpaperboat.com/wp-content/uploads/2020/05/08/41291/simple-19-920x1636.jpg");
-    background-size:contain;
+    background-image: url('./Images/project-a.png');
+    background-size:cover;
 
+
+}
+
+.box h3{
+    background-color: rgba(133, 177, 228, 0.473);
+    width:40%;
+    text-align: center ;
+    margin:2rem;
+    border: var(--borders);
+    border-radius: 1rem;
 }
 
 /* about me  */
@@ -153,19 +164,63 @@ nav a:hover{
 
 .other-projects{
     padding:1.5rem;
-    margin:1rem 0;
-    background-color: var(--ivory);
+    background-color: var(--ivory)
+    
 }
 
 .project-container{
     display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%
 }
 
 .project-small-card{
-    height:25rem;
+    height:42rem;
+    width:100%;
+    padding:2rem;
+    border-radius: 2rem;
+    margin:2rem 0;
+    text-align: center;
+}
+
+.project-small-card:hover{
+    box-shadow: 8px 8px 3px 1px rgba(164, 186, 206, 0.664);
+    background-color: var(--box-colours);
+    transition: all 0.5s ease-in-out;
+}
+
+.project-small-card img{
+    height: 25rem;
+    width:75%;
+    border-radius: 50%;
+    background-position:left;
+    
+}
 
 
+/* footer */
 
+footer{
+    padding:2rem 1rem;
+
+}
+
+footer h3{
+    padding: 1rem;
+    text-align: center;
+    line-height: 1;
+}
+
+footer ul{
+    text-align: center;
+    display:co;
+    width:25%;
+}
+
+footer ul li img{
+    width:3rem;
+}
 /* media queries */
 
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
@@ -192,7 +247,49 @@ nav a:hover{
     }
 
    
+    .other-projects{
+        padding:1.5rem;
+        background-color: var(--ivory);
+    }
+    
+    .project-container{
+        justify-content: space-around;
+    }
 
+    .project-small-card{
+        height:45rem;
+        width:30%;
+        align-content: center;
+        margin:2rem;
+    }
+    
+   
+    footer ul{
+        text-align:right;
+    }
+
+    footer h5 {
+        float: left;
+    }
+   
+
+    footer ul li{
+        display:inline-block;
+        width:5%;
+        align-content: right;
+    }
+
+    footer ul li img{
+        width:3rem;
+    }
+    
+    .project-small-card img{
+        height:30rem;
+        width:70%;
+        border-radius: 50%;
+        
+    }
+    
   /* media query for larger screens */
   @media screen and (min-width: 992px) {
 
