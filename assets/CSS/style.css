@@ -1,0 +1,199 @@
+:root{
+    --borders:2px solid rgba(45, 128, 206, 0.486);
+    --ivory:rgba(187, 228, 248, 0.466);
+    --text:rgb(24, 121, 167);
+}
+/* 
+:root{
+    --borders:2px solid rgba(45, 128, 206, 0.486);
+    --ivory:rgba(249, 253, 255, 0.158);
+    --text:rgb(123, 213, 255);
+} */
+
+body{
+    /* background-color: black; */
+    background-color: var(--ivory);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  /* set body font size to 1.75rem, which is 1.75x more than the font-size of 10px, making it 17.5px  */
+  font-size: 1.75rem;
+  line-height: 1.5;
+  color:var(--text)
+}
+
+html {
+    /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
+    font-size: 62.5%;
+  }
+
+h1 {
+/* 4rem = 40px (4 * 10px) */
+font-size: 4rem;
+}
+
+h2 {
+font-size: 3.5rem;
+}
+
+h3 {
+font-size: 3rem;
+}
+
+h4 {
+font-size: 2.5rem;
+}
+
+h5 {
+font-size: 2rem;
+}
+
+h6 {
+font-size: 1.5rem;
+}
+
+p {
+margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.625rem;
+  font-weight: 700;
+  line-height: 1.85;
+}
+
+/* nav bar */
+nav {
+    margin: 1rem 0;
+    float:none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding:0 0.5rem;
+}
+
+nav ul {
+    width:100%;
+    margin:0;
+    transition: all 0.5s ease-in-out;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0.25rem 0;
+    width:32%;
+    text-align: center;
+    
+}
+
+nav a{
+    text-decoration: none;
+    display:block;
+    transition: all 0.3s ease-out;
+    color:var(--text)
+}
+
+nav a:hover{
+    background-color: rgb(255, 255, 255);
+    border-radius:5px;
+    color:rgb(51, 147, 192);
+    box-shadow: 8px 8px 3px 1px rgba(164, 186, 206, 0.664);
+}
+
+/* First section with intro text and top project. it's been flex wrapped to change for desktop */
+.intro-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box{
+    height:25rem;
+    flex: 0 1 100%;
+    position: relative;
+}
+
+.intro-card{
+    background: var(--ivory);
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.intro-card h1{
+    margin:auto;
+    text-align: center;
+    padding:2rem;
+   
+    
+}
+
+.project-card {
+    background-image: url("https://wallpaperboat.com/wp-content/uploads/2020/05/08/41291/simple-19-920x1636.jpg");
+    background-size:contain;
+
+}
+
+/* about me  */
+
+
+.about-me{
+    padding:1.5rem;
+    margin:1rem 0;
+    
+}
+
+
+
+/* project cards */
+
+.other-projects{
+    padding:1.5rem;
+    margin:1rem 0;
+    background-color: var(--ivory);
+}
+
+.project-container{
+    display:flex;
+}
+
+.project-small-card{
+    height:25rem;
+
+
+
+/* media queries */
+
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+@media screen and (min-width: 768px) {
+    
+    nav ul {
+        display:flex;
+        width:50%;
+        transition: all 0.5s ease-in-out;
+    }
+
+
+    nav a {
+        float:none;
+        margin: 0.25rem 0;
+        text-align: center;
+        justify-content: flex-start;
+    }
+  
+    .box{
+        flex: 0 0 50%;
+        transition: flex-basis 0.2s ;
+        height:50rem;
+    }
+
+   
+
+  /* media query for larger screens */
+  @media screen and (min-width: 992px) {
+
+  }
