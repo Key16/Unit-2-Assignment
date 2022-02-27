@@ -202,15 +202,11 @@ nav a:hover{
 }
 
 .project-small-card{
-    height:42rem;
     width:100%;
     padding:2rem;
     border-radius: 2rem;
     margin:2rem 0;
     text-align: center;
-}
-
-.project-small-card:hover{
     box-shadow: 0.8rem 0.8rem 0.3rem 0.1rem rgba(164, 186, 206, 0.664);
     background-color: var(--box-colours);
     transition: all 0.5s ease-in-out;
@@ -301,13 +297,23 @@ footer ul li img{
         align-content: center;
         margin:2rem;
         flex:1 1 30%;
+        box-shadow: none;
+        background-color: none;
     }
     
+    
+    .project-small-card:hover{
+        box-shadow: 0.8rem 0.8rem 0.3rem 0.1rem rgba(164, 186, 206, 0.664);
+        background-color: var(--box-colours);
+        transition: all 0.5s ease-in-out;
+    }
 
     .project-small-card img{
         width: 30rem;
         height: 30rem;
     }
+
+    
 
     footer {
         display:flex;
