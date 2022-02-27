@@ -113,16 +113,16 @@ nav a:hover{
 }
 
 .box{
-    height:40rem;
     flex: 0 1 100%;
     position: relative;
 }
 
-.intro-card{
+.intro-container .intro-card{
     background: var(--ivory);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: center;
 }
 
 .intro-card h1{
@@ -141,6 +141,7 @@ nav a:hover{
     border-radius: 2rem;
     background-color: var(--ivory);
     padding:1rem;
+    margin:1rem;
 }
 
 .project-card{
@@ -259,7 +260,7 @@ footer ul li img{
 /* media queries */
 
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
     
     nav ul {
         display:flex;
