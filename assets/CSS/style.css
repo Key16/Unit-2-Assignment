@@ -20,12 +20,13 @@ body{
   /* set body font size to 1.75rem, which is 1.75x more than the font-size of 10px, making it 17.5px  */
   font-size: 1.75rem;
   line-height: 1.5;
-  color:var(--text)
+  color:var(--text);
 }
 
 html {
     /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
     font-size: 62.5%;
+    scroll-behavior: smooth !important;
   }
 
 h1 {
@@ -122,31 +123,61 @@ nav a:hover{
     background: var(--ivory);
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: center;
 }
 
 .intro-card h1{
     margin:auto;
     text-align: center;
     padding:2rem;
+    width:100%;
    
     
 }
 
-.project-card {
-    background-image: url('./Images/project-a.png');
-    background-size:cover;
-
-
+.intro-card img{
+    width: 15rem;
+    height:15rem;
+    border: var(--borders);
+    border-radius: 2rem;
+    background-color: var(--ivory);
+    padding:1rem;
 }
 
-.box h3{
+.project-card{
+    display:relative;
+}
+
+.project-card img{
+    height:40rem;
+    width:100%;
+}
+
+
+.project-card a{
+    text-decoration: none;
+}
+
+.project-card img:hover {
+    box-shadow: inset 0px 0px 3rem rgba(44, 52, 102, 0.575);
+    transition: all 0.5s ease-in-out;
+}
+
+
+.project-card h3:hover {
+    transition: all 0.5s ease-in-out;
+    color:white;
+}
+
+.project-card h3{
+    position:absolute;
     background-color: rgba(133, 177, 228, 0.473);
     width:40%;
     text-align: center ;
     margin:2rem;
     border: var(--borders);
     border-radius: 1rem;
+    color:var(--text);
 }
 
 /* about me  */
@@ -199,6 +230,11 @@ nav a:hover{
 }
 
 
+.project-small-card h4 {
+    margin:1rem 0;
+}
+
+
 /* footer */
 
 footer{
@@ -229,7 +265,7 @@ footer ul li img{
 /* media queries */
 
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
     
     nav ul {
         display:flex;
@@ -251,7 +287,11 @@ footer ul li img{
         height:50rem;
     }
 
-   
+    .project-card img{
+        height:50rem;
+    }
+    
+
     .other-projects{
         padding:1.5rem;
         background-color: var(--ivory);
@@ -262,7 +302,7 @@ footer ul li img{
     }
 
     .project-small-card{
-        height:45rem;
+        height:48rem;
         align-content: center;
         margin:2rem;
         flex:1 1 30%;
@@ -295,7 +335,4 @@ footer ul li img{
     
 
     
-  /* media query for larger screens
-  @media screen and (min-width: 992px) {
-
-  } */
+ 
