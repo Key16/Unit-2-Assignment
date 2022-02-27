@@ -158,11 +158,6 @@ nav a:hover{
     text-decoration: none;
 }
 
-.project-card img:hover {
-    box-shadow: inset 0px 0px 3rem rgba(44, 52, 102, 0.575);
-    transition: all 0.5s ease-in-out;
-}
-
 
 .project-card h3:hover {
     transition: all 0.5s ease-in-out;
