@@ -115,6 +115,7 @@ nav a:hover{
 .box{
     flex: 0 1 100%;
     position: relative;
+    width:100%;
 }
 
 .intro-container .intro-card{
@@ -144,13 +145,18 @@ nav a:hover{
     margin:2rem;
 }
 
+/* main project card*/
+
 .project-card{
     display:relative;
+    background-color: var(--ivory);
 }
 
 .project-card img{
     height:40rem;
     width:100%;
+    border-radius:4rem;
+    padding: 2rem;
 }
 
 
@@ -168,7 +174,9 @@ nav a:hover{
     position:absolute;
     background-color: rgba(133, 177, 228, 0.473);
     width:40%;
-    text-align: center ;
+    text-align: center;
+    top: 2rem;
+    left:2rem;
     margin:2rem;
     border: var(--borders);
     border-radius: 1rem;

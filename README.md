@@ -16,3 +16,9 @@ The footer contains ways to contact me, in the form of image logos that will red
 
 I added a variable for the colours if i wanted to change the background colours. 
 
+This was my framework before i built the site
+
+![Wirefram 1](./assets/Images/wireframe-1.png)
+
+![Wirefram 2](./assets/Images/wireframe-2.png)
+
